@@ -1,0 +1,8 @@
+---
+- hosts: 192.168.159.142
+  become: true
+  tasks:
+  - name: git remove
+    yum:
+      name: git
+      state: present
